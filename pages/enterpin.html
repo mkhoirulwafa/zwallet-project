@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zwallet - Confirmation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/confirmation.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- MODAL -->
+    <div
+      id="digitPin"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="digitPinlbl"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              <b>Enter PIN to transfer</b> <br><br>
+              <p class="small">Enter your 6 digits PIN for confirmation to continue transferring money. </p>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body my-auto">
+            <div class="form-group form-group-lg pin mr-lg-4 mr-md-3 mr-sm-1 mr-1 mb-5">
+              <div class="col-12 col-sm-12 col-md-12 text-center w-100">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+                  <input oninput="mustNumber(this)" type="text" maxlength="1">
+              </div>
+            </div>
+            <div class="modal-footer offset-md-8 col-md-4 mt-1 btn primary">
+              <a href="success.html">
+                <button type="button" class="btn btn-lg text-center text-white">
+                  Continue
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL -->
+
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light my-navbar">
+    <a class="navbar-brand active pl-3 ml-5" href="#"><b>Zwallet</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ml-auto mt-lg-0">
+        <div class="container profile-badge col-sm-12">
+          <div class="row">
+            <div class="col-3 col-sm-3 col-md-3">
+              <div class="container">
+                <img src="../assets/pp.png" class="avatar">
+              </div>
+            </div>
+            <div class="col-7 col-sm-3 col-md-6 mr-n2">
+              <div class="row">
+                <div class="col-sm-12 col-md-10 mt-2">
+                  <p><b>Robert Chandler</b></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-11"><span>+62 8139 3877 7946</span></div>
+              </div>
+            </div>
+            <div class="col-2 col-sm-3 col-md-3 mt-2">
+              <div class="container w-10">
+                <img src="../assets/bell.png" class="icon notification">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+    <!-- CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-sm-block d-md-block d-lg-block col-sm-2 col-md-4 col-lg-3">
+          <ul class="list-group card d-flex">
+            <li class="list-group-item border-0 mb-0">
+              <div class="row pt-1">
+                <div class="col-sm-2 col-md-2">
+                  <img src="../assets/grid-noblue.png" class="list-icon float-left" />
+                </div>
+                <div class="col-md-7 d-none d-sm-none d-md-block">
+                  <h6 class="">Dashboard</h6>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 mb-0">
+              <a href="transfer.html">
+                  <div class="row pt-1">
+                      <div class="col-md-2">
+                        <img src="../assets/arrow-up-blue.png" class="list-icon float-left" />
+                      </div>
+                      <div class="col-md-7 d-sm-none d-md-block">
+                        <h6 class="active">Transfer</h6>
+                      </div>
+                  </div>
+              </a>
+            </li>
+            <li class="list-group-item border-0 mb-0">
+              <div class="row pt-1">
+                <div class="col-md-2">
+                  <img src="../assets/plus.png" class="list-icon" />
+                </div>
+                <div class="col-md-7 d-sm-none d-md-block">
+                  <h6 class="">Top Up</h6>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 mb-0">
+              <div class="row pt-1 pb-5 mb-5">
+                <div class="col-md-2">
+                  <img src="../assets/user.png" class="list-icon" />
+                </div>
+                <div class="col-md-7 d-sm-none d-md-block">
+                  <h6 class="">Profile</h6>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 justify-self-end">
+              <div class="row pt-5 mt-5 mb-5"></div>
+            </li>
+            <li class="list-group-item border-0 justify-self-end">
+              <div class="row pt-5 mt-5">
+                <div class="col-md-2">
+                  <img src="../assets/log-out.png" class="list-icon float-left" />
+                </div>
+                <div class="col-md-7 d-sm-none d-md-block">
+                  <h6 class="">Logout</h6>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-11 col-sm-9 col-md-9">
+          <div class="container card">
+            <div class="container">
+              <div class="row main-title mt-3">
+                <h6><b>Transfer to</b></h6>
+                <br />
+              </div>
+              <!-- List Profile -->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mb-3">
+                    <div class="card border-0">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-1">
+                                <img src="../assets/prof/2.png" alt="">
+                            </div>
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-11 pl-5 pl-sm-5 pt-1">
+                                <p><b>Samuel Suhi</b></p>
+                                <p class="small">+62 813-8492-9994</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+              <div class="row main-title mt-2 mb-2">
+                <h6><b>Detail</b></h6>
+                <br />
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mb-2">
+                  <div class="card border-0">
+                    <div class="container mb-2 mt-n2">
+                      <p>Amount</p>
+                      <h6><b>Rp100.000</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mb-2">
+                  <div class="card border-0">
+                    <div class="container mb-2 mt-n2">
+                      <p>Balance Left</p>
+                      <h6><b>Rp20.000</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mb-2">
+                  <div class="card border-0">
+                    <div class="container mb-2 mt-n2">
+                      <p>Date & Time</p>
+                      <h6><b>May 11, 2020 - 12.20</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mb-2">
+                  <div class="card border-0">
+                    <div class="container mb-2 mt-n2">
+                      <p>Notes</p>
+                      <h6><b>For buying some socks</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-9"></div>
+                <div class="col-sm-12 col-md-3 mt-2">
+                  <div class="border-0">
+                    <div class="container mb-2 mt-n2 btn primary">
+                      <button
+                        type="button"
+                        class="btn btn-lg text-white"
+                        data-toggle="modal"
+                        data-target="#digitPin"
+                      >
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+    <footer class="container-fluid fixed-bottom">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <p>2020. Zwallet All Right Reserved</p>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <p class="mr-3">+62 5637 8882 9901</p>
+              <p class="ml-3">contact@zwallet.com</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!-- END FOOTER -->
+    </div>
+    <!-- END CONTENT -->
+
+    <script src="../js/pin.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

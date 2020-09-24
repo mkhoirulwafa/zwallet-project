@@ -1,0 +1,90 @@
+body {
+  margin: 0 !important;
+}
+.forgot {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(58, 61, 66, 0.8);
+  float: right;
+}
+.password .eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+.light {
+  color: #ccc;
+}
+.input {
+  position: relative;
+}
+.input input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+  padding: 15px 40px;
+  background-color: transparent;
+}
+.email, .name{
+  margin-bottom: 2rem;
+}
+
+.email .mail {
+  position: absolute;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/mail.png);
+  background-size: cover;
+}
+.password.input {
+  margin-bottom: 1rem;
+}
+.password .lock {
+  position: absolute;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/lock.png);
+  background-size: cover;
+}
+.name .username{
+    position: absolute;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    background: url(../assets/person.png);
+    background-size: cover;
+}
+input{
+  box-sizing: border-box;
+}
+.pin input {
+  width: 53px;
+  height: 65px;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+  border-radius: 10px;
+  font-size: 30px;
+  color: #3A3D42;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pin input:focus {
+  border: 1px solid #6379F4 !important;
+  box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+  border-radius: 10px;
+  outline: none;
+}
+
+.pin input:last-child {
+  margin-right: 0;
+}
+.input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}

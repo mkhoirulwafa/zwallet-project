@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+body {
+  margin-bottom: 5rem;
+  background-color: #e5e5e5;
+}
+.profile-badge {
+  margin-left: 0.1rem;
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+}
+.avatar,
+.icon {
+  width: 2.5rem;
+  position: relative;
+}
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin-bottom: 0.3rem !important;
+  padding-top: 1rem;
+}
+.active {
+  color: #6379f4;
+}
+ul li:nth-child(2)::before {
+  content: "";
+  height: 30px;
+  position: absolute;
+  left: -2em;
+  top: 14px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px 2px;
+  margin: 0 0 6px 2em;
+  background-color: #6379f4;
+}
+.secondary {
+  color: #aaa;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.small {
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+.plus {
+  color: #1ec15f !important;
+}
+.minus {
+  color: #ff5b37 !important;
+}
+input{
+  box-sizing: border-box;
+}
+.pin input {
+  width: 53px;
+  height: 65px;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+  border-radius: 10px;
+  font-size: 30px;
+  color: #3A3D42;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pin input:focus {
+  border: 1px solid #6379F4 !important;
+  box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+  border-radius: 10px;
+  outline: none;
+}
+
+.pin input:last-child {
+  margin-right: 0;
+}
+.input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.amount {
+  width: 100%;
+  padding: 15 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  color: #6379f4 !important;
+}
+
+.amount::placeholder {
+  color: #B5BDCC;
+}
+.search {
+  margin-bottom: 60px;
+}
+.search .icon-notes {
+  position: absolute;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/edit-2.png);
+  background-size: cover;
+}
+.input input:focus {
+  outline: none;
+  border-bottom: 1.5px solid #6379f4;
+}
+.input {
+  position: relative;
+}
+.input input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+  padding: 15px 40px;
+  /* background-color: #ebecec; */
+  border-radius: 10px;
+}
+.search {
+  margin-bottom: 60px;
+}
+.search .icon-search {
+  position: absolute;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/edit-2.png);
+  background-size: cover;
+}
+.input input:focus {
+  outline: none;
+  border-bottom: 1.5px solid #6379f4;
+}
